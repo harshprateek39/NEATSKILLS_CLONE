@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import Courses from "./component/Courses";
-import Certification from "./component/Certifications";
-import PinkCard from "./component/PinkCard";
+import Courses from "@/app/component/Courses";
+import Certification from "@/app/component/Certifications";
+import PinkCard from "@/app/component/PinkCard";
 
 export default function Home() {
   return (

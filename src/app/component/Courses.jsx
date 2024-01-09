@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import { course, courses } from '../demoData/courseMenu'
-import CourseCard from './CourseCard';
+import { course, courses } from '@/app/demoData/courseMenu'
+import CourseCard from '@/app/component/CourseCard';
 
 const Courses = () => {
     const [activeBtn, setActiveBtn] =useState(0);
