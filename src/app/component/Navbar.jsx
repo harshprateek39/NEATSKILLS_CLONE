@@ -30,7 +30,7 @@ useEffect(() => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []); 
-  
+
   return (
     <div>
       { hideOnMobile&&<motion.div className={ !sticky? " flex justify-between transition-all duration-300 px-2 items-center py-6 fixed bg-transparent  w-full top-0 mx-auto z-50 ":" flex justify-between px-2 items-center py-6 fixed bg-[#0D0E14]  w-full top-0 mx-auto z-50 shadow-lg drop-shadow-lg transition-all duration-300  "}   >
@@ -44,8 +44,8 @@ useEffect(() => {
             <Link href={"/blog"} >Why Neat Skills?</Link>
             <Link href={"/blog"} >Our Courses</Link>
             <Link href={"/blog"} >ABout Us</Link>
-            <Link href={"/blog"} >Login</Link>
-            <Link href={"/blog"} >Sign up</Link>
+            <Link href={"/login"} >Login</Link>
+            <Link href={"/login"} >Sign up</Link>
             <Link href={"/blog"} >Watch a demo session</Link>
             </div>
             <div className=" py-6 w-full flex items-center justify-center ">
