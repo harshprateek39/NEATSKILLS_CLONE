@@ -19,3 +19,9 @@ body{
 ::-webkit-scrollbar{
   display: none;
 }
+.radialG{
+  background: radial-gradient(circle, rgba(225,52,139,0.1515056022408963) 0%, rgba(255,255,255,0) 100%);
+}
+.white{
+  background-color: white;
+}

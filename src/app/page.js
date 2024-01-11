@@ -3,10 +3,12 @@ import Image from "next/image";
 import Courses from "@/app/component/Courses";
 import Certification from "@/app/component/Certifications";
 import PinkCard from "@/app/component/PinkCard";
-
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 export default function Home() {
   return (
-    <main className=" min-h-screen mt-24  flex flex-col  ">
+    <main className=" min-h-screen  flex flex-col  ">
+    <Navbar />
       <div className=" grid xl:grid-flow-col grid-cols-1 xl:grid-cols-2 xl:px-36  pb-28  ">
         <div className=" text-center xl:text-left flex flex-col py-20 gap-6 items-center  ">
           <h1 className="  text-2xl  xl:text-8xl xl:font-semibold w-7/12 xl:w-11/12">
@@ -154,6 +156,7 @@ export default function Home() {
 
       {/* end of ertification */}
   <PinkCard/>
+  <Footer/>
     </main>
   );
 }
