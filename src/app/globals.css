@@ -14,4 +14,8 @@ body{
   color: white;
   background-color:#0D0E14;
   position: relative;
+  min-height: 100vh;
+}
+::-webkit-scrollbar{
+  display: none;
 }

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <div className=' bg-black grid grid-flow-col grid-cols-4 py-6 px-14 min-h-80'>
+    <div className=' bg-black grid grid-flow-row lg:grid-flow-col grid-cols-2 gap:2 lg:grid-cols-4 py-6 px-14 min-h-80'>
        <div className='  justify-self-start flex w-full  '>
        
         <Link href={"/"} ><Image src="https://neatskills.online/componentsgraphics/common/navbar/navbar/neatskillslogosample.svg" width={200} height={500}></Image></Link>
