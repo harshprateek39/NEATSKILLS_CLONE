@@ -43,14 +43,14 @@ const Login = () => {
       <div className=" radi bg-radi relative flex items-center justify-center  w-4/5 ">
       <div class=" -z-10 absolute inset-0 rounded-[100%] filter blur-3xl bg-gradient-to-r from-purple-500 to-pink-500 opacity-75 w-[50%] m-auto">
       </div>
-       <Image className=" -z-10 w-7/12 absolute left-[10%]" src="/Rectangle.png " width={1000} height={1000}></Image>
+       <Image className=" -z-10 w-7/12 absolute left-[10%]" src="/Rectangle.png" width={1000} height={1000}></Image>
       <Image className=" w-3/6" src="/Frame1.png" height={250} width={250} />
       </div>
         <div className=" py-2">
           <h1 className=" text-sm">Start leaning Right Away!</h1>
         </div>
         <div className=" h-2 w-1/3 grid grid-cols-3 gap-3">
-        {bulb.map((item,ind)=><div key={index}  id="1" className={ item!==index? " bg- bg-white/15 rounded-3xl":"bg- bg-white rounded-3xl"}></div>)}
+        {bulb.map((item,ind)=><div key={ind}  id="1" className={ item!==index? " bg- bg-white/15 rounded-3xl":"bg- bg-white rounded-3xl"}></div>)}
           
          
           
