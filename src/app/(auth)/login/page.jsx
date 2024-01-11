@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import Link from "next/link"
-const login = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -57,7 +57,7 @@ const login = () => {
          
           
         </div>
-      </div>
+      </div> 
       <div className=" mt-4 px-5  lg:px-24">
         <div className=" bg-[#FFFFFF05] p-6 flex flex-col items-center rounded-3xl gap-8">
           <h1 className="md:text-3xl font-normal" >Get Started for Free</h1>
@@ -111,4 +111,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
