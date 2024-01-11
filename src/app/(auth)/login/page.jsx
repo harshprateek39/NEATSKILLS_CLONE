@@ -1,7 +1,7 @@
-"use client"
-import Image from "next/image"
-import { useEffect, useState } from "react"
-import Link from "next/link"
+"use client";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 const Login = () => {
   const [formData, setFormData] = useState({
     email: '',
@@ -37,9 +37,7 @@ const Login = () => {
     
     },[index])
   return (
-    
-    <div className=" min-h-[100vh]  lg:grid lg:grid-flow-col grid-flow-row  lg:grid-cols-2 pt-14 w-[100vw]">
-       
+    <div className=" min-h-[100vh]  lg:grid lg:grid-flow-col grid-flow-row  lg:grid-cols-2 pt-14 w-[100vw]">   
       <div className="    flex flex-col relative  items-center gap-4">
       <div><Image className=" py-10" src="https://neatskills.online/componentsgraphics/common/navbar/navbar/neatskillslogosample.svg" height={300} width={300} ></Image></div>
       <div className=" radi bg-radi relative flex items-center justify-center  w-4/5 ">
@@ -52,7 +50,7 @@ const Login = () => {
           <h1 className=" text-sm">Start leaning Right Away!</h1>
         </div>
         <div className=" h-2 w-1/3 grid grid-cols-3 gap-3">
-        {bulb.map((item,ind)=><div  id="1" className={ item!==index? " bg- bg-white/15 rounded-3xl":"bg- bg-white rounded-3xl"}></div>)}
+        {bulb.map((item,ind)=><div key={index}  id="1" className={ item!==index? " bg- bg-white/15 rounded-3xl":"bg- bg-white rounded-3xl"}></div>)}
           
          
           

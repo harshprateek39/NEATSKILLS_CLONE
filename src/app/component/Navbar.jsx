@@ -15,8 +15,6 @@ useEffect(() => {
   setHideOnMobile(isMobile);
   setActive(false);
 }, [isMobile]);
-  
-
   const [sticky , setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -27,16 +25,13 @@ useEffect(() => {
         setSticky(false);
       }
     };
-     
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []); 
-
   
   return (
-   
     <div>
       { hideOnMobile&&<motion.div className={ !sticky? " flex justify-between transition-all duration-300 px-2 items-center py-6 fixed bg-transparent  w-full top-0 mx-auto z-50 ":" flex justify-between px-2 items-center py-6 fixed bg-[#0D0E14]  w-full top-0 mx-auto z-50 shadow-lg drop-shadow-lg transition-all duration-300  "}   >
        <AnimatePresence mode="wait">{active&&<motion.div onClick={()=>setActive(false)} key={active} initial={{ opacity:0}} exit={{ opacity:0}} animate={{ opacity:1}} transition={{ duration:0.5}} className= "  left-0 fixed top-0  w-[100vw] h-[100vh] bg-black/80 grid"></motion.div>}</AnimatePresence>
@@ -80,12 +75,8 @@ useEffect(() => {
         <div className=" flex justify-between gap-16 ">
         <Link href={"/login"} className=" hover:scale-105 transition-all duration-150 ease-in-out font-semibold rounded-lg bg-[#E1348B] lg:text-[20px] ring-white ring-2  px-[21px] py-[12px] " >SIGN UP</Link>
         <Link href={"/login"} className=" hover:scale-105 transition-all duration-150 ease-in-out  font-semibold rounded-lg lg:text-[20px] ring-white ring-2  px-[24px] py-[12px] " >LOGIN</Link>
-       
         </div>
     </motion.div>}
-    
-  
-    
     </div>
     
   ) 
