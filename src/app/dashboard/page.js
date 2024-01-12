@@ -3,7 +3,7 @@ import React, { useContext, useEffect } from 'react'
  import { Context } from '@/app/component/Context'
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
     
      const router = useRouter();
     const context=useContext(Context);
@@ -21,4 +21,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page;
