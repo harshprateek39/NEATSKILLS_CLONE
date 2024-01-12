@@ -6,7 +6,7 @@ import {app} from '@/app/middleware/firebase';
 import { GoogleAuthProvider,signInWithPopup ,signOut  } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 export const Context= createContext(null);
-const auth= getAuth(app)
+
 export const ContextProvider=(props)=>{
     const [user,setUser] =useState(null);
     const provider = new GoogleAuthProvider();
