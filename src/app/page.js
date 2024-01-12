@@ -5,7 +5,18 @@ import Certification from "@/app/component/Certifications";
 import PinkCard from "@/app/component/PinkCard";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+import { useContext, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { Context } from "@/app/component/Context";
 export default function Home() {
+  const context= useContext(Context);
+  const router=useRouter();
+  
+  useEffect(()=>{
+      if( context.user){
+        router.push("/dashboard");
+      } 
+  },[context]);
   return (
     <main className=" min-h-screen  flex flex-col  ">
     <Navbar />
